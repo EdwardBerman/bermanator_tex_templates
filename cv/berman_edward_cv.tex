@@ -1,15 +1,15 @@
 \documentclass[11pt,letterpaper,sans]{moderncv}
 
 \moderncvstyle{banking} % 'casual', 'classic', 'oldstyle' 'banking', 'fancy'
-\moderncvcolor{green} % 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{purple} % 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 \addtolength{\voffset}{-3.5em}
 \addtolength{\textheight}{7em}
 \setlength{\hintscolumnwidth}{2cm} % width of dates column
 
-\quote{``In real life, I assure you, there is no such thing as algebra.''
---- Fran Lebowitz}
+%\quote{``In real life, I assure you, there is no such thing as algebra.''
+%--- Fran Lebowitz}
 
 \newcommand{\entry}[6]%
 {\cventry[0.85em]{#4}{#3}{#2}{#1}{#5}{#6}} % banking
@@ -40,12 +40,13 @@
 \unskip\subtext{#4}\medskip}
 
 \newcommand{\pub}[2]{\cvlistitem{#1. \\ \subtext{#2}\\}}
-\newcommand{\paper}[5]{\pub{#1}{#3. \textbf{#2}. \arxiv{#4}. \website{#5} }}
+\newcommand{\paper}[5]{\pub{#1}{#3 \textbf{#2} \arxiv{#4} \website{#5} }}
 
 \name{Edward}{Berman}
 \email{berman.ed@northeastern.edu}
 \homepage{https://ebrmn.space/} % URL
 \social[github]{EdwardBerman}
+\social[]{he/him}
 %\social[linkedin]{evanchenmath}
 %\social[facebook]{evanchenmath}
 \lfoot{\emph{Last updated \today}}
@@ -58,58 +59,73 @@
 \section{Education}
 \entry{2021 -- present}
 	{Northeastern University}%
-	{Bachelor of Science Mathematics}
+	{Bachelor of Science Mathematics (with honors)}
 	{}{}{}
 \entry{2021 -- present}
 	{Northeastern University}%
 	{Bachelor of Science Applied Physics}
 	{}{}{}
+  
 (Full list of coursework at
 \cvurl{https://ebrmn.space/courses}.)
 
 
 \section{Select Publications and Preprints}
 \paper{Efficient Point-spread Function Modeling with ShOpt.jl: A Point Spread-function Benchmarking Study with JWST NIRCam Imaging}{The Astronomical Journal}
-{\textbf{Edward Berman}, Jacqueline McCleary, Anton M. Koekemoer, Maximilien Franco, Nicole E. Drakos, Daizhong Liu, James W. Nightingale, Marko Shuntov, Diana Scognamiglio, Richard Massey, Guillaume Mahler, Henry Joy McCracken, Brant E. Robertson, Andreas L. Faisst, Caitlin M. Casey, Jeyhan S. Kartaltepe, and COSMOS-Web: The JWST Cosmic Origins Survey}%
+{\textbf{Edward Berman}, Jacqueline McCleary, Anton M. Koekemoer, Maximilien Franco, Nicole E. Drakos, Daizhong Liu, James W. Nightingale, Marko Shuntov, Diana Scognamiglio, Richard Massey, Guillaume Mahler, Henry Joy McCracken, Brant E. Robertson, Andreas L. Faisst, Caitlin M. Casey, Jeyhan S. Kartaltepe, and COSMOS-Web: The JWST Cosmic Origins Survey.}%
 {https://doi.org/10.3847/1538-3881/ad6a0f}{\href{https://github.com/EdwardBerman/shopt}{[code]}}
 
-\paper{On Soft Clustering for Correlation Estimators: Model Uncertainty, Differentiability, and Surrogates}{In preparation for the Open Journal of Astrophysics}
-{\textbf{Edward Berman}, Sneh Pandya, Jacqueline McCleary, Marko Shuntov, Caitlin Casey, Nicole Drakos, Andreas Faisst, Steven Gillman, Ghassem Gozaliasl, Natalie Hogg, Jeyhan Kartaltepe, Anton Koekemoer, Wilfried Mercier, Diana Scognamiglio, and COSMOS-Web: The JWST Cosmic Origins Survey}{https://cosmo-corr.netlify.app/}{\href{https://cosmo-corr.netlify.app/}{[website]}}
+\paper{On Soft Clustering for Correlation Estimators: Model Uncertainty, Differentiability, and Surrogates}{Submitted to the Open Journal of Astrophysics}
+{\textbf{Edward Berman}, Sneh Pandya, Jacqueline McCleary, Marko Shuntov, Caitlin Casey, Nicole Drakos, Andreas Faisst, Steven Gillman, Ghassem Gozaliasl, Natalie Hogg, Jeyhan Kartaltepe, Anton Koekemoer, Wilfried Mercier, Diana Scognamiglio, and COSMOS-Web: The JWST Cosmic Origins Survey.}{https://arxiv.org/abs/2504.06174}{\href{https://cosmo-corr.netlify.app/}{[website]}}
 
 \section{All Publications (Reverse Chronological Order)}
 
 \subsection{2025}
 
-\paper{On The Uncertainty Calibration of Equivariant Functions}{In Preparation for Transactions on Machine Learning Research (TMLR)}
-{\textbf{Edward Berman}, Jacob Ginesin, Robin Walters}{https://ebrmn.space/aas_ws_2025.html}{\href{https://ebrmn.space/aas_ws_2025.html}{[Thesis]}}
+\paper{The highest resolution map of (dark) matter}{Submitted to Nature}
+{Diana Scognamiglio1, Gavin Leroy, David Harvey, Richard Massey, Jason Rhodes, Malte Brinch, \textbf{Edward Berman}, Caitlin Casey, Nicole Drakos, Andreas Faisst, Maximilien Franco, Leo W.H. Fung, Ghassem Gozaliasl, Qiuhan He, Eric Huff, Natalie Hogg, Jeyhan Kartaltepe, Anton Koekemoer, Shouwen Jin, Erini Lambrides, Alexie Leauthaud, Daizhong Liu, Guillaume Mahler, Claudia Maraston, Jacqueline McCleary, James Nightingale, Louise Paquereau, Sandrine Pires, Marko Shuntov, Greta Toni, Maximillian von Wietersheim-Kramsta, John Weaver, and \& COSMOS-Web friends.}{}{}
 
-\paper{On The Uncertainty Calibration of Equivariant Functions}{Undergraduate Thesis}
-{\textbf{Edward Berman*}, Jacob Ginesin*}{https://ebrmn.space/aas_ws_2025.html}{\href{https://ebrmn.space/aas_ws_2025.html}{[Thesis]}}
+%\paper{Comprehensive Data Reduction and High-Fidelity Imaging of JWST NIRCam Observations in COSMOS-Web}{In Preparation for the Astrophysical Journal.}{Maximilien Franco, ..., \textbf{Edward Berman}.}{}{}
 
-\paper{On Soft Clustering for Correlation Estimators: Model Uncertainty, Differentiability, and Surrogates}{In preparation for the Open Journal of Astrophysics}
-{\textbf{Edward Berman}, Sneh Pandya, Jacqueline McCleary, Marko Shuntov, Caitlin Casey, Nicole Drakos, Andreas Faisst, Steven Gillman, Ghassem Gozaliasl, Natalie Hogg, Jeyhan Kartaltepe, Anton Koekemoer, Wilfried Mercier, Diana Scognamiglio, and COSMOS-Web: The JWST Cosmic Origins Survey}{https://cosmo-corr.netlify.app/}{\href{https://cosmo-corr.netlify.app/}{[website]}}
+%\paper{On Uncertainty Calibration for Equivariant Functions}{In Preparation for Equivariant Systems: Theory and Applications in State Estimation, Artificial Intelligence and Control Workshop at RSS 2025}
+%{\textbf{Edward Berman}, Jacob Ginesin, Robin Walters.}{https://github.com/EdwardBerman/EquivariantUQBounds}{}
 
-\paper{Tracing the galaxy-halo connection with galaxy clustering in COSMOS-Web from $\mathbf{z=0.1}$ to $\mathbf{z \sim 12}$}{Submitted to Astronomy and Astrophysics}{L. Paquereau, C. Laigle, H.J. McCracken, M. Shuntov, O. Ilbert, H.B. Akins, N. Allen, R. Arango- Togo, \textbf{E.M. Berman}, M. Béthermin, C.M. Casey, J. McCleary, Y. Dubois, N.E. Drakos, A.L. Faisst, M. Franco, S. Harish, C.K. Jespersen, J.S. Kartaltepe, A.M. Koekemoer, V. Kokorev, E. Lambrides, R. Larson, D. Liu, D. Le Borgne, J.S.W. Lewis, J. McKinney, W. Mercier, J.D. Rhodes, B.E. Robertson, S. Toft, M. Trebitsch, L. Tresse, J.R. Weaver}{https://arxiv.org/abs/2501.11674}{}
+\paper{On Uncertainty Calibration for Equivariant Functions}{In Preparation for Transactions on Machine Learning Research (TMLR)}
+{\textbf{Edward Berman}, Jacob Ginesin, Robin Walters.}{https://github.com/EdwardBerman/EquivariantUQBounds}{}
 
-\paper{On Differentiable Correlation Functions}{American Astronomical Society Winter Session}
-{\textbf{Edward Berman}, Jacqueline McCleary}{https://ui.adsabs.harvard.edu/abs/2025AAS...24542401B/abstract}{}
+%\paper{On Uncertainty Calibration for Equivariant Functions}{Undergraduate Thesis.}
+%{\textbf{Edward Berman*}, Jacob Ginesin*.}{https://ebrmn.space/aas_ws_2025.html}{\href{https://ebrmn.space/aas_ws_2025.html}{[Thesis]}}
+
+\paper{On Soft Clustering for Correlation Estimators: Model Uncertainty, Differentiability, and Surrogates}{Submitted to the Open Journal of Astrophysics}
+{\textbf{Edward Berman}, Sneh Pandya, Jacqueline McCleary, Marko Shuntov, Caitlin Casey, Nicole Drakos, Andreas Faisst, Steven Gillman, Ghassem Gozaliasl, Natalie Hogg, Jeyhan Kartaltepe, Anton Koekemoer, Wilfried Mercier, Diana Scognamiglio, and COSMOS-Web: The JWST Cosmic Origins Survey.}{https://arxiv.org/abs/2504.06174}{\href{https://cosmo-corr.netlify.app/}{[website]}}
+
+\paper{The COSMOS-Web Lens Survey (COWLS) III: forecasts versus data}{Submitted to Monthly Notices of the Royal Astronomical Society (MNRAS)}{Natalie B. Hogg, James W. Nightingale, Quihan He, Jacqueline McCleary, Guillaume Mahler, Aristeidis Amvrosiadis, Ghassem Gozaliasl, \textbf{Edward Berman}, Richard J. Massey, Diana Scognamiglio, Maximilien Franco, Daizhong Liu, Marko Shuntov, Louise Paquereau, Olivier Ilbert, Natalie Allen, Sune Toft, Hollis B. Akins, Caitlin M. Casey, Jeyhan S. Kartaltepe, Anton M. Koekemoer, Henry Joy McCracken, Jason D. Rhodes, Brant E. Robertson, Nicole E. Drakos, Andreas L. Faisst, Hossein Hatamnia, and Sophie L. Newman.}{https://arxiv.org/pdf/2503.08785}{}
+
+\paper{The COSMOS-Web Lens Survey (COWLS) II: depth, resolution, and NIR coverage from JWST reveal 17 spectacular lenses}{Submitted to Monthly Notices of the Royal Astronomical Society (MNRAS)}{Guillaume Mahler, James W. Nightingale, Natalie B. Hogg, Ghassem Gozaliasl, Jacqueline McCleary, Qiuhan He, \textbf{Edward Berman}, Maximilien Franco, Daizhong Liu, Richard J. Massey, Wilfried Mercier, Diana Scognamiglio, Marko Shuntov, Louise Paquereau, Olivier Ilbert, Natalie Allen, Sune Toft, Hollis B. Akins, Caitlin M. Casey, Jeyhan S. Kartaltepe, Anton M. Koekemoer, Henry Joy McCracken, Jason D. Rhodes, Brant E. Robertson, Jorge A. Zavala, Nicole E. Drakos, Andreas L. Faisst, Georgios E. Magdis, Shuowen Jin, and COSMOS-Web collaboration members.}{https://arxiv.org/pdf/2503.08782}{}
+
+\paper{The COSMOS-Web Lens Survey (COWLS) I: Discovery of $>$100 high redshift strong lenses in contiguous JWST imaging}{Submitted to Monthly Notices of the Royal Astronomical Society (MNRAS)}{James W. Nightingale, Guillaume Mahler, Jacqueline McCleary, Qiuhan He, Natalie B. Hogg, Aristeidis Amvrosiadis, Ghassem Gozaliasl, Wilfried Mercier, Diana Scognamiglio, \textbf{Edward Berman}, Gavin Leroy, Daizhong Liu, Richard J. Massey, Marko Shuntov, Maximilian von Wietersheim-Kramsta, Maximilien Franco, Louise Paquereau, Olivier Ilbert, Natalie Allen, Sune Toft, Hollis B. Akins, Caitlin M. Casey, Jeyhan S. Kartaltepe, Anton M. Koekemoer, Henry Joy McCracken, Jason D. Rhodes, Brant E. Robertson, and COSMOS-Web collaboration members.}{https://arxiv.org/pdf/2503.08777}{}
+
+\paper{Tracing the galaxy-halo connection with galaxy clustering in COSMOS-Web from $\mathbf{z=0.1}$ to $\mathbf{z \sim 12}$}{Submitted to Astronomy and Astrophysics}{L. Paquereau, C. Laigle, H.J. McCracken, M. Shuntov, O. Ilbert, H.B. Akins, N. Allen, R. Arango- Togo, \textbf{E.M. Berman}, M. Béthermin, C.M. Casey, J. McCleary, Y. Dubois, N.E. Drakos, A.L. Faisst, M. Franco, S. Harish, C.K. Jespersen, J.S. Kartaltepe, A.M. Koekemoer, V. Kokorev, E. Lambrides, R. Larson, D. Liu, D. Le Borgne, J.S.W. Lewis, J. McKinney, W. Mercier, J.D. Rhodes, B.E. Robertson, S. Toft, M. Trebitsch, L. Tresse, J.R. Weaver.}{https://arxiv.org/abs/2501.11674}{}
+
+\paper{On Differentiable Correlation Functions}{American Astronomical Society Winter Session. \textcolor{red}{\textit{Oral.}} }
+{\textbf{Edward Berman}, Jacqueline McCleary.}{https://ui.adsabs.harvard.edu/abs/2025AAS...24542401B/abstract}{}
 
 \subsection{2024}
 
-\paper{The State of Julia for Scientific Machine Learning}{NeurIPS Machine Learning and the Physical Sciences Workshop (ML4PS)}
-{\textbf{Edward Berman*}, Jacob Ginesin*}{https://arxiv.org/pdf/2410.10908}{\href{https://github.com/EdwardBerman/SoJ}{[poster \& slides]}  \href{https://neurips.cc/virtual/2024/105797}{[video]}}
+\paper{The State of Julia for Scientific Machine Learning}{NeurIPS Machine Learning and the Physical Sciences Workshop (ML4PS). \textcolor{red}{\textit{Oral Spotlight.}}}
+{\textbf{Edward Berman*}, Jacob Ginesin*.}{https://arxiv.org/pdf/2410.10908}{\href{https://github.com/EdwardBerman/SoJ}{[poster \& slides]}  \href{https://neurips.cc/virtual/2024/105797}{[video]}}
 
-\paper{Not-so-little Red Dots: Two massive and dusty starbursts at $\mathbf{z\sim 5-7}$ pushing the limits of star formation discovered by JWST in the COSMOS-Web survey}{Astrophysical Journal Letters}{Fabrizio Gentile, Caitlin M. Casey, Hollis B. Akins, Maximilien Franco, Jed McKinney, \textbf{Edward Berman}, Olivia R. Cooper, Nicole E. Drakos, Michaela Hirschmann, Arianna S. Long, Georgios Magdis, Anton M. Koekemoer, Vasily Kokorev, Marko Shuntov, Margherita Talia, Natalie Allen, Santosh Harish, Olivier Ilbert, Henry J. McCracken, Jeyhan S. Kartaltepe, Daizhong Liu, Louise Paquereau, Jason Rhodes, Michael R. Rich, Brant Robertson, Sune Toft, Ghassem Gozaliasl}{https://iopscience.iop.org/article/10.3847/2041-8213/ad738a}{}
+\paper{Not-so-little Red Dots: Two massive and dusty starbursts at $\mathbf{z\sim 5-7}$ pushing the limits of star formation discovered by JWST in the COSMOS-Web survey}{Astrophysical Journal Letters}{Fabrizio Gentile, Caitlin M. Casey, Hollis B. Akins, Maximilien Franco, Jed McKinney, \textbf{Edward Berman}, Olivia R. Cooper, Nicole E. Drakos, Michaela Hirschmann, Arianna S. Long, Georgios Magdis, Anton M. Koekemoer, Vasily Kokorev, Marko Shuntov, Margherita Talia, Natalie Allen, Santosh Harish, Olivier Ilbert, Henry J. McCracken, Jeyhan S. Kartaltepe, Daizhong Liu, Louise Paquereau, Jason Rhodes, Michael R. Rich, Brant Robertson, Sune Toft, Ghassem Gozaliasl.}{https://iopscience.iop.org/article/10.3847/2041-8213/ad738a}{}
 
-\paper{Can It Edit? Evaluating the Ability of Large Language Models to Follow Code Editing Instructions}{Conference on Language Modeling (COLM)}{Federico Cassano, Luisa Li, Akul Sethi, Noah Shinn, Abby Brennen-Jones, Jacob Ginesin, \textbf{Edward Berman}, George Chakhnashvili, Anton Lozhkov, Carolyn Jane Anderson, Arjun Guha}{https://arxiv.org/abs/2312.12450}{\href{https://openreview.net/forum?id=D06yk3DBas##discussion}{[Open Review]}}
+\paper{Can It Edit? Evaluating the Ability of Large Language Models to Follow Code Editing Instructions}{Conference on Language Modeling (COLM)}{Federico Cassano, Luisa Li, Akul Sethi, Noah Shinn, Abby Brennen-Jones, Jacob Ginesin, \textbf{Edward Berman}, George Chakhnashvili, Anton Lozhkov, Carolyn Jane Anderson, Arjun Guha.}{https://arxiv.org/abs/2312.12450}{\href{https://openreview.net/forum?id=D06yk3DBas##discussion}{[Open Review]}}
 
 \paper{Efficient Point-spread Function Modeling with ShOpt.jl: A Point Spread-function Benchmarking Study with JWST NIRCam Imaging}{The Astronomical Journal}
-{\textbf{Edward Berman}, Jacqueline McCleary, Anton M. Koekemoer, Maximilien Franco, Nicole E. Drakos, Daizhong Liu, James W. Nightingale, Marko Shuntov, Diana Scognamiglio, Richard Massey, Guillaume Mahler, Henry Joy McCracken, Brant E. Robertson, Andreas L. Faisst, Caitlin M. Casey, Jeyhan S. Kartaltepe, and COSMOS-Web: The JWST Cosmic Origins Survey}%
+{\textbf{Edward Berman}, Jacqueline McCleary, Anton M. Koekemoer, Maximilien Franco, Nicole E. Drakos, Daizhong Liu, James W. Nightingale, Marko Shuntov, Diana Scognamiglio, Richard Massey, Guillaume Mahler, Henry Joy McCracken, Brant E. Robertson, Andreas L. Faisst, Caitlin M. Casey, Jeyhan S. Kartaltepe, and COSMOS-Web: The JWST Cosmic Origins Survey.}%
 {https://doi.org/10.3847/1538-3881/ad6a0f}{\href{https://github.com/EdwardBerman/shopt}{[code]}}
 
 \subsection*{2023}
 
-\paper{ShOpt.jl: A Julia Package for Empirical Point Spread Function Characterization of JWST NIRCam Data}{Journal of Open Source Software}{\textbf{Edward Berman}, Jacqueline McCleary}{https://joss.theoj.org/papers/10.21105/joss.06144}{\href{https://github.com/EdwardBerman/shopt}{[code]}}
+\paper{ShOpt.jl: A Julia Package for Empirical Point Spread Function Characterization of JWST NIRCam Data}{Journal of Open Source Software}{\textbf{Edward Berman}, Jacqueline McCleary.}{https://joss.theoj.org/papers/10.21105/joss.06144}{\href{https://github.com/EdwardBerman/shopt}{[code]}}
 
 
 \hfill \textcolor{blue}{\href{https://scholar.google.com/citations?user=rMjtDxQAAAAJ&hl=en}{[Google Scholar]}}
@@ -120,20 +136,20 @@
 \subsection{Research}
 
 \job{Visiting Scientist}
-{Harvard Center for Astrophysics $|$ Smithsonian. AstroAI}{Summer 2025}
-{}
+{Center for Astrophysics Harvard $|$ Smithsonian. AstroAI}{Summer 2025}
+{Looking for life on other planets.}
 
-\job{Thesis Researcher}
+\job{Undergraduate Researcher}
 {Khoury College Geometric Learning Lab}{12/2024 -- present}
-{}
+{Symmetry in Deep Learning.}
 
-\job{Research Co-op}
-{Northeastern Network Science Institute}{07/2024-12/2024}
-{}
+%\job{Research Co-op}
+%{Northeastern Network Science Institute}{07/2024-12/2024}
+%{}
 
 \job{Research Co-op}
 {Northeastern Cosmology Group}{07/2023-12/2023}
-{}
+{James Webb Space Telescope NIRCam Calibration. COSMOS Cartographer.}
 
 \subsection{Teaching}
 \job{Course Assistant}
@@ -151,31 +167,39 @@
 
 \subsection{Departmental}
 \cvitem{Mathematics Engagement and Mentorship Association (Northeastern)}{Co-President}
-\cvitem{Society of Physics Students (Northeastern)}{Events and Outreach Chair}
 
 
 \section{Selected fellowships, awards, and telescope observing time}
-\cvitem{Oral Spotlight ML4PS Workshop}{top 2\% accepted papers. ``For The State of Julia for Scientific Machine Learning''}
-\cvitem{COSMOS-Web ``Jackpot'' Lens}{awarded 4 hours, X-SHOOTER Telescope, Co-Investigator}
-\cvitem{Northeastern Mathematics Capstone Award}{Given to outstanding research capstone projects. For ``On The Uncertainty Calibration of Equivariant Functions''}
-\cvitem{Northeastern Physics Research Co-op Fellowship}{\$6,500 research grant}
-\cvitem{Dean's Scholarship}{\$12,000 annual to study at Northeastern University}
+\subsection{Paper Spotlights and Honors}
+\cvitem{Oral Spotlight ML4PS Workshop}{Top 2\% accepted papers. For ``The State of Julia for Scientific Machine Learning''}
+\subsection{Telescope Observing Time}
+\cvitem{COSMOS-Web ``Jackpot'' Lens}{Awarded 4 hours, X-SHOOTER Telescope, Co-Investigator}
+\subsection{Northeastern Internal Research Grants and Scholarships}
+\cvitem{Physics Research Co-op Fellowship}{\$6,500. Supported my research co-op with the Northeastern Cosmology Group.}
+\cvitem{Summit Award}{\$3,000. Highest award for undergraduate research from Northeastern Undergraduate Research and Fellowships Office.}
+\cvitem{College of Science Dean's Fund}{\$1,350. Inaugural awardee 2024. \$2,700 repeat awardee 2025.}
+\cvitem{Ascent Award}{\$1,000.}
+\cvitem{Various Travel Grants}{For NeurIPS 2024, COLM 2024, AAS 2025.}
+%\cvitem{College of Science Scholarship and Husky Scholarship}{Scholarship for masters study at Northeastern University}
+\cvitem{Dean's Scholarship}{\$12,000 annual merit scholarship for undergraduate study at Northeastern University}
 
 \section{Selected Talks}
 
 \subsection{Invited}
 
-\cvitem{Equivariance and Uncertainty}{Harvard Center for Astrophysics $|$ Smithsonian. \textcolor{blue}{\href{https://www.youtube.com/watch?v=jb1XsqaXnCs}{[video]}} \textcolor{blue}{\href{https://ebrmn.space/aas_ws_2025.html}{[slides]}}}
+\cvitem{On the Uncertainty Calibration of Equivariant Functions}{Center for Astrophysics Harvard $|$ Smithsonian. \textcolor{blue}{\href{https://www.youtube.com/watch?v=jb1XsqaXnCs}{[video]}} \textcolor{blue}{\href{https://ebrmn.space/aas_ws_2025.html}{[slides]}}}
 \cvitem{The JWST Point Spread Function}{Columbia University}
 
 \subsection{Conference and Workshop Talks}
 
 \cvitem{The State of Julia for Scientific Machine Learning}{NeurIPS ML4PS Workshop Oral \textcolor{blue}{\href{https://neurips.cc/virtual/2024/105797}{[video]}}}
+\cvitem{Parameter Estimation of the PSF}{Brown University SUMS}
 
 \section{References}
 \cvitem{Professor Robin Walters}{r.walters@northeastern.edu}
 \cvitem{Professor Jacqueline McCleary}{j.mccleary@northeastern.edu}
-\cvitem{Director Cecilia Garraffo}{cgarraffo@cfa.harvard.edu}
+\cvitem{AstroAI Founding Director Cecilia Garraffo}{cgarraffo@cfa.harvard.edu}
+\cvitem{Professor Jonathan Blazek}{j.blazek@northeastern.edu}
 
 \end{document}
 
